@@ -1,0 +1,22 @@
+module.exports = [
+  { name: 'vue', library: 'Vue', js: 'https://ztb.net/js/vue.js', css: '' },
+  { name: 'vue-i18n', library: 'VueI18n', js: 'https://ztb.net/js/vue-i18n.js', css: '' },
+  { name: 'vue-router', library: 'VueRouter', js: 'https://ztb.net/js/vue-router.js', css: '' },
+  { name: 'vuex', library: 'Vuex', js: 'https://ztb.net/js/vuex.js', css: '' },
+  { name: 'axios', library: 'axios', js: 'https://ztb.net/js/axios.min.js', css: '' },
+  { name: 'better-scroll', library: 'BScroll', js: 'https://ztb.net/js/bscroll.min.js', css: '' },
+  { name: 'element-ui', library: 'ELEMENT', js: 'https://ztb.net/js/index.js', css: 'https://ztb.net/js/index.css' },
+  { name: 'mockjs', library: 'Mock', js: 'https://ztb.net/js/mock.min.js', css: '' },
+  { name: 'lodash', library: '_', js: 'https://ztb.net/js/lodash.min.js', css: '' },
+  { name: 'ua-parser-js', library: 'UAParser', js: 'https://ztb.net/js/ua-parser.min.js', css: '' },
+  { name: 'js-cookie', library: 'Cookies', js: 'https://ztb.net/js/js.cookie.min.js', css: '' },
+  { name: 'nprogress', library: 'NProgress', js: 'https://ztb.net/js/nprogress.min.js', css: 'https://ztb.net/js/nprogress.css' },
+  { name: 'dayjs', library: 'dayjs', js: 'https://ztb.net/js/dayjs.min.js', css: '' },
+  { name: 'fuse.js', library: 'Fuse', js: 'https://ztb.net/js/fuse.min.js', css: '' },
+  { name: 'hotkeys-js', library: 'hotkeys', js: 'https://ztb.net/js/hotkeys.js', css: '' },
+  { name: 'qs', library: 'Qs', js: 'https://ztb.net/js/qs.js', css: '' },
+  { name: 'lowdb', library: 'low', js: 'https://ztb.net/js/low.min.js', css: '' },
+  { name: 'lowdb/adapters/LocalStorage', library: 'LocalStorage', js: 'https://ztb.net/js/LocalStorage.min.js', css: '' },
+  { name: 'screenfull', library: 'screenfull', js: 'https://ztb.net/js/screenfull.min.js', css: '' },
+  { name: 'sortablejs', library: 'Sortable', js: 'https://ztb.net/js/Sortable.min.js', css: '' }
+]
