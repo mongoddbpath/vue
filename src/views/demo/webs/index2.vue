@@ -162,7 +162,7 @@
     </template>
       <!-- <p>网站类型：{{rulesForm.appNameOK}}</p> -->
       <p v-if="rulesForm.appNameOK === '企业站'">域名：{{rulesForm.domain}}</p>
-      <p v-if="rulesForm.appNameOK === '竞价站'">域名：{{`ztb.net/${rulesForm.domain}`}}</p>
+      <p v-if="rulesForm.appNameOK === '竞价站'">域名：{{`/${rulesForm.domain}`}}</p>
       <p>网站套餐：{{rulesForm.planname}}</p>
       <!-- <p>服务器：{{serve}}</p> -->
       <p>合同开启时间：{{rulesForm.startTime}}</p>
@@ -723,14 +723,14 @@ export default {
             this.webCreateName = `将生成【${domain}】测试站`
             this.webCreateNameOK = `【${domain}】`
           } else if (parseInt(this.rulesForm.isTest) === 1 && this.rulesForm.appNameOK === '竞价站') {
-            this.webCreateName = `将生成【ztb.net/${name}】测试站`
-            this.webCreateNameOK = `【ztb.net/${name}】`
+            this.webCreateName = `将生成【/${name}】测试站`
+            this.webCreateNameOK = `【/${name}】`
           } else if (this.rulesForm.appNameOK === '企业站') {
             this.webCreateName = `将生成【${domain}】企业站`
             this.webCreateNameOK = `【${domain}】`
           } else {
-            this.webCreateName = `将生成【ztb.net/${name}】竞价站`
-            this.webCreateNameOK = `【ztb.net/${name}】`
+            this.webCreateName = `将生成【/${name}】竞价站`
+            this.webCreateNameOK = `【/${name}】`
           }
           let weberror = `${this.webCreateNameOK}网站生成失败`
           // let webOK = `${this.webCreateNameOK}网站生成成功，可请前往站点管理页面来登录后台,

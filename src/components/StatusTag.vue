@@ -74,7 +74,7 @@ export default {
       let h = this.$createElement
       let webid = this.scope.row.id
       let url2 = this.scope.row.url
-      let url1 = `${this.scope.row.url}.ztb.net`
+      let url1 = `${this.scope.row.url}.`
       weblogin(webid).then(res => {
         let urlres = res.replace(url2, url1)
         console.dir(res)
@@ -89,7 +89,7 @@ export default {
       })
     },
     openok () {
-      let url = `http://${this.scope.row.url}.ztb.net`
+      let url = `http://${this.scope.row.url}.`
       window.open(url)
     }
   }

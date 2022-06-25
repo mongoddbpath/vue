@@ -38,7 +38,7 @@ export default {
     if (this.scope.row.appName === 'site') {
       this.weburl = this.scope.row.url
     } else {
-      this.weburl = `ztb.net/${this.scope.row.name}`
+      this.weburl = `/${this.scope.row.name}`
     }
   },
   methods: {
@@ -62,21 +62,21 @@ export default {
       if (this.scope.row.appName === 'site') {
         window.open(`http://${this.scope.row.url}`)
       } else {
-        window.open(`http://ztb.net/${this.scope.row.name}`)
+        window.open(`http:///${this.scope.row.name}`)
       }
     },
     mountedOK () {
       if (this.scope.row.appName === 'site') {
         this.weburl = this.scope.row.url
       } else {
-        this.weburl = `ztb.net/${this.scope.row.name}`
+        this.weburl = `/${this.scope.row.name}`
       }
     },
     toIndex () {
       if (this.scope.row.appName === 'site') {
         window.open(`http://${this.scope.row.url}`)
       } else {
-        window.open(`http://ztb.net/${this.scope.row.name}`)
+        window.open(`http:///${this.scope.row.name}`)
       }
     },
     toHotTai () {

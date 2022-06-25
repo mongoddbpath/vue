@@ -1,7 +1,7 @@
 <template>
 <d2-container type="card">
   <template slot="header">网站生成<br>
- 如果站点类型选择竞价站，将生成【ztb.net/网站名】网站，该类型网站一般用来做SEM百度竞价服务<br>
+ 如果站点类型选择竞价站，将生成【/网站名】网站，该类型网站一般用来做SEM百度竞价服务<br>
  如果站点类型选择企业站，将生成【域名】网站，等待解析绑定域名后该类型网站一般用来做SEO优化服务
   </template>
 <div class="form-view">
@@ -15,9 +15,9 @@
 </el-form-item>
   <el-form-item label="网站名(例子：www.abc.com)" prop="name" required>
     <el-tooltip class="item" effect="light"
-    content="企业站生成：域名;竞价站生成：ztb.net/网站名" placement="bottom">
+    content="企业站生成：域名;竞价站生成：/网站名" placement="bottom">
     <el-input v-model="rulesForm.name"
-    placeholder="竞价站填写一串字符串;竞价站生成：ztb.net/网站名">
+    placeholder="竞价站填写一串字符串;竞价站生成：/网站名">
     </el-input></el-tooltip>
   </el-form-item>
   <el-form-item label="域名(例子：www.abc.com)" prop="domain" required>
@@ -392,8 +392,8 @@ export default {
             this.webCreateName = `将生成【${domain}】企业站点网站，请核对`
             this.webCreateNameOK = `【${domain}】`
           } else {
-            this.webCreateName = `将生成【ztb.net/${name}】竞价站点网站，请核对`
-            this.webCreateNameOK = `【ztb.net/${name}】`
+            this.webCreateName = `将生成【/${name}】竞价站点网站，请核对`
+            this.webCreateNameOK = `【/${name}】`
           }
           let weberror = `${this.webCreateNameOK}网站生成失败`
           let webOK = `${this.webCreateNameOK}网站生成成功，可请前往站点管理页面来登录后台,
