@@ -62,18 +62,6 @@ export default {
         username: 'test9',
         password: 'admin236'
       }
-      // this.$axios.post('http://admin.qwyx.cn/register', data)
-      //   .then(function (response) {
-      //     console.log(response)
-      //     let dataAxios = response.data
-      //     let { username } = dataAxios
-      //     console.log(username)
-      //     // HTTP状态码
-      //     console.log(response.status)
-      //   })
-      //   .catch(function (error) {
-      //     console.log(error)
-      //   })
       UserLogin(userinfo).then(res => {
         console.log(res)
       }).catch(err => {
