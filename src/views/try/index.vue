@@ -60,7 +60,7 @@ export default {
       this.loading = true
       let userinfo = {
         username: 'test9',
-        password: 'admin236'
+        password: '******'
       }
       UserLogin(userinfo).then(res => {
         console.log(res)
